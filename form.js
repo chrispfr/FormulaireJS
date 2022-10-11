@@ -29,7 +29,7 @@ form.addEventListener('submit', (e) => {
   }
 
   if (age.value < 18) {
-    messages.push('You must be over 18 to sign up')
+    messages.push('Tes pas majeur')
   }
 
   if (!regEx.test(email.value)) {
@@ -45,7 +45,7 @@ form.addEventListener('submit', (e) => {
   }
 
   if (password.value != passwordConfirmation.value) {
-    messages.push("Your password and your password confirmation don't match")
+    messages.push("Not the same password")
   }
 
   if (messages.length > 0) {
