@@ -13,7 +13,7 @@ const regEx =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]
 form.addEventListener('submit', (e) => {
   let messages = []
   if (firstName.value === '' || firstName.value == null ) {
-    messages.push('First name is required')
+    messages.push('First name please')
   }
 
   if (firstName.value.length < 3 ) {
@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
   }
 
   if (lastName.value === '' || lastName.value == null) {
-    messages.push('Last name is required')
+    messages.push('Last name please')
   }
   
   if (age.value === '' || lastName.value == null) {
@@ -37,7 +37,7 @@ form.addEventListener('submit', (e) => {
   }
 
   if (email.value != emailConfirmation.value) {
-    messages.push("Your email and your email confirmation don't match")
+    messages.push("Not the same email")
   }
 
   if (password.value.length < 6) {
